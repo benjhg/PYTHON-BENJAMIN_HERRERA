@@ -14,11 +14,11 @@ for x in range(1, 6):
 weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 day = random.choice(weekdays)
 
-print(f'Today is: {day}')
+print(f'Today is: {day }xasd')
 
 if day == 'Monday':
     print('It will be a long week!')
-elif(day == 'Friday'):
+if(day == 'Friday'):
     print('Woohoo, time for the weekend!')
 else:
     print('Not quite there yet.')
