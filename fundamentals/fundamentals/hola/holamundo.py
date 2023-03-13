@@ -1,24 +1,26 @@
-print("hola malditos")
-x = "hola, python"
-print(x)
-y = 42
-print(y)
-import random
+# 1. TAREA: imprime "Hola, mundo"
+print( "Hola, mundo" )
 
-print('Welcome to Python!')
 
-print('This is a loop printing 5 times')
-for x in range(1, 6):
-    print(f'x is: {x}')
+# 2. imprime "Hola, Noelle" con el nombre en una variable
+name = "Noelle"
+print( "Hola,", name )	# con una coma
+print( "Hola, " + name )	# con un +
 
-weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-day = random.choice(weekdays)
 
-print(f'Today is: {day }xasd')
 
-if day == 'Monday':
-    print('It will be a long week!')
-if(day == 'Friday'):
-    print('Woohoo, time for the weekend!')
-else:
-    print('Not quite there yet.')
+# 3. imprimir "Hola 42!" con el número en una variable
+name = 42
+print( "Hola", name,"!" )	# con una coma
+print( "Hola" + name +"!" )	# con una +	-- este debería arrojar un error!
+
+'''
+
+# 4. imprimir "Amo comer sushi y pizza" con las comidas en variables
+fave_food1 = "sushi"
+fave_food2 = "pizza"
+print( tu código aquí ) # con .format()
+print( tu código aquí ) # con una cadena f
+
+
+'''
