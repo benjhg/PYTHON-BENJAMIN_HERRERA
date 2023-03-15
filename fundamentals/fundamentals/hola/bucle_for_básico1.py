@@ -27,7 +27,7 @@ print( "la suma es ", suma)
 for i in range(2018, 0, -4):
     print(i)
 
-
+#establece tres variables: lowNum, highNum, mult. Comenzando en lowNum y pasando por highNum, imprime solo los enteros que sean múltiplos de mult.
 lowNum = 1
 highNum = 20
 mult = 3
