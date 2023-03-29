@@ -13,12 +13,12 @@ class Usuario:
             return self
 
     def mostrar_balance(self):
-        print("tu saldo es :", self.balance)
+        print(self.nombre ,"tu saldo es :", self.balance)
         return self
 
     def hacer_deposito(self, amount):
         self.balance += amount
-        print("Depósito exitoso hacia. Saldo actual:", self.balance)   
+        print("Deposito exitoso Saldo actual:", self.balance)   
         return self  
 
     def tranferencia(self, amount,user):
