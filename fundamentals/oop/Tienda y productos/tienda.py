@@ -12,7 +12,7 @@ class tiendita:
     
     def agregar_producto(self, nuevo_producto):
         self.productos.append(nuevo_producto)
-     
+#este es utilizando length
     def vender_producto(self, id):
         index = 1
         for producto in self.productos: 
@@ -23,10 +23,14 @@ class tiendita:
                 return self
         else:
             print("El producto con el ID especificado no existe en la lista de productos de la tienda.")
-
-    def vender_articulo(self, id):    
-        
-        pass
+#este es cun un id especificio asignado
+    def vender_articulo(self, id_producto):
+        for producto in self.productos:
+            if producto.id == id_producto:
+                self.productos.remove(producto)
+                print(f"Producto vendido: {producto.nombre}, Precio: {producto.precio}")
+                return self
+        print("El producto con el ID especificado no existe en la lista de productos de la tienda.")
 
     def inflacion(self, porcentaje_aumento):
         for producto in self.productos:

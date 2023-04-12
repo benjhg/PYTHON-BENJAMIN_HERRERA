@@ -1,11 +1,13 @@
-
-
-class producto():
-    def __init__(self, nombre, precio, categoria, id):
+class producto:
+    id_actual = 0
+    
+    def __init__(self, nombre, precio, categoria):
+        self.id = producto.id_actual
         self.nombre = nombre
         self.precio = precio
         self.categoria = categoria
-        self.id = id
+        producto.id_actual += 1
+
         
     def actualizar_precio(self, cambio_porcentaje, esta_elevado):
         if esta_elevado:
